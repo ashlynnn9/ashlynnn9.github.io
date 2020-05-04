@@ -1,0 +1,23 @@
+body {
+    margin: 0px ;
+}
+.grid_parent {
+    display: grid ;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em ;
+    grid-auto-rows; minmax (200px,auto)
+    grid-template-areas:
+        "header"
+        "main content"
+        "text"
+
+}
+
+.box_1 {
+    background-color: grey ;
+    grid-area: header;
+    grid-column-start: 1;
+    grid-column-end: 4
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
